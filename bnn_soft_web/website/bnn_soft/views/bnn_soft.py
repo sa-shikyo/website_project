@@ -5,9 +5,9 @@ from django.shortcuts import render
 
 @require_http_methods(["GET", "POST"])
 def bnn_homepage(request):
-	return render(request, 'bnn_soft/homepage.html', {})
+    return render(request, 'bnn_soft/homepage.html', {})
 
 
 @require_http_methods(["GET", "POST"])
 def bnn_company(request):
-	return render(request,'bnn_soft/company.html', {})
+    return render(request,'bnn_soft/company.html', {})
