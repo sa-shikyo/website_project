@@ -20,23 +20,20 @@
 </head>
 <body>
 {% block body %}
-    {% block header %}{% endblock %}
-    {% block goto_menu %}{% endblock %}
-    <div class="container">
-        <div class="title_container">
+    <div class="header_container">{% block header %}{% endblock %}</div>
+    <div class="goto_container">{% block goto %}{% endblock %}</div>
+    <div class="contents_container">
         {% block contents_title %}{% endblock %}
-        </div>
-        <div class="contents_container">
         {% block contents %}{% endblock %}
-        </div>
     </div>
-    {% block footer %}{% endblock %}
-{% endblock %}
+    <div class="footer_container">{% block footer %}{% endblock %}</div>
+
     <form id="jump_form" action="#" method="post">{% csrf_token %} {# 共通の遷移フォーム #}
         <input type="hidden" name="parm_a" value="">
         <input type="hidden" name="parm_b" value="">
         <input type="hidden" name="parm_c" value="">
     </form>
+{% endblock %}
 {% block script %}{% endblock %}
 </body>
 </html>

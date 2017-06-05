@@ -3,5 +3,10 @@
 {% block html_title %}{{_('ホーム')}} | {{_('バナナソフト会社')}}{% endblock %}
 {% block header %}{% include 'bnn_soft/moudel/header.html' %}{% endblock %}
 {% block contents_title %}{% include 'bnn_soft/moudel/contents_title.html' %}{% endblock %}
-
+{% block contents %}
+<div class="contents_part01">
+    <div class="contents_goto">{% include 'bnn_soft/moudel/left_goto_menu.html' %}</div>
+    <div class="contents_main">{{_('内容')}}</div>
+</div>
+{% endblock %}
 {% block footer %}{% include 'bnn_soft/moudel/footer.html' %}{% endblock %}
