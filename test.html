@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>test</title>
+    <style type="text/css">
+        body {
+            background-color: #8C8C8C;
+            margin: 0px;
+        }
+
+        .container {
+            width: 1000px;
+            height: 800px;
+            margin: auto;
+            background-color: #FFFFFF;
+        }
+
+        .header {
+            width: 100%;
+            height: 80px;
+            /*background-color: #FFF000;*/
+        }
+
+        .logo {
+            float: left;
+            width: 50%;
+            height: 80px;
+            background-color: #000FFF;
+        }
+
+        .goto {
+            float: left;
+            width: 50%;
+            height: 80px;
+            /*background-color: #7F4C72;*/
+        }
+
+        ul {
+            list-style-type: none;
+            font-size: 0;
+            padding-left: 50px;
+            padding-top: 25px;
+        }
+
+        ul li {
+            display: inline;
+            font-size: 20px;
+            float: left;
+        }
+
+        ul li a {
+            display: block;
+            width: 80px;
+            height: 30px;
+            background-position: top left;
+            background-repeat: no-repeat;
+            /*text-indent: 100%;*/
+            white-space: nowrap;
+            overflow: hidden;
+            text-align: center;
+            color: #000000;
+        }
+
+        #top_goto_menu ul li:first-child {
+            background-color: #6A6AFF;
+        }
+
+        ul li a:link {
+            text-decoration: none;
+        }
+
+        ul li a:hover {
+            /*background-color: #6A6AFF;*/
+            color: #FFF000;
+        }
+
+        .contents {
+            width: 100%;
+            height: 620px;
+            background-color: #FFF000;
+        }
+
+        .title {
+            width: 100%;
+            height: 200px;
+            background-color: #6A6AFF;
+        }
+
+        .content {
+            width: 100%;
+            height: 420px;
+            background-color: #000FFF;
+        }
+
+        .div {
+            width: 225px;
+            height: 200px;
+            background-color: #FFFFFF   ;
+            float: left;
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <div id="logo" class="logo"></div>
+        <div id="goto" class="goto">
+            <ul>
+                <li><a href="">aaaa</a></li>
+                <li><a href="">bbbb</a></li>
+                <li><a href="">cccc</a></li>
+                <li><a href="">dddd</a></li>
+                <li><a href="">ffff</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="contents">
+        <div id="contents_title" class="title"></div>
+        <div id="contents" class="content">
+            <div class="div">
+                <div style="width: 100%; height: 50px; background-color: #000000;"></div>
+                <div style="width: 60%; height: 59px; margin: auto; background-color: #FFF000;"></div>
+                <div style="background-color: #8C8C8C; width:80%; height:1px; margin: 5px auto;"></div>
+            </div>
+            <div class="div"></div>
+            <div class="div"></div>
+            <div class="div"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
