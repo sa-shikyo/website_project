@@ -6,53 +6,88 @@
 {% block contents_title %}{% include 'bnn_soft/moudel/contents_title.html' %}{% endblock %}
 {% block contents %}
 <div class="contents_part01">
-    <div id="company" class="contents_company"></div>
-    <div id="adopt" class="contents_adopt"></div>
+    <div id="company" class="contents_company">
+        <table class="table_style_01">
+            <tr>
+                <td class="td_style_01">{{_('●')}}{{_('詳しい会社情報をご覧ください。')}}</td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+    <div id="adopt" class="contents_adopt">
+        <table class="table_style_02">
+            <tr>
+                <td class="td_style_02">{{_('●')}}{{_('詳しい採用情報をご覧ください。')}}</td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
 </div>
 <div class="contents_part02">
-    <div id="management" class="contents_management"></div>
-    <div id="business" class="contents_business"></div>
-    <div id="elegant_demeanor" class="contents_elegant_demeanor"></div>
+    <div id="management" class="contents_management">
+        <table class="table_style_01">
+            <tr>
+                <td class="td_style_01">{{_('●')}}{{_('経営理念をご紹介します。')}}</td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+    <div id="business" class="contents_business">
+        <table class="table_style_01">
+            <tr>
+                <td class="td_style_01">{{_('●')}}{{_('業務内容をご紹介します。')}}</td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+    <div id="elegant_demeanor" class="contents_elegant_demeanor">
+        <table class="table_style_01">
+            <tr>
+                <td class="td_style_01">{{_('●')}}{{_('社員の風采をご覧ください。')}}</td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
 </div>
 <div class="contents_part03">
     <div id="topics" class="contents_topics">
-        <table>
+        <table class="table_style_03">
             <tr>
-                <th colspan="2" align="left">{{_('トピックス')}}</th>
+                <th colspan="2" class="th_style_01">{{_('トピックス')}}</th>
             </tr>
             <tr>
-                <td>{{_('2016年04月02日')}}</td>
+                <td class="td_style_03">{{_('2016年04月02日')}}</td>
                 <td>{{_('技術者採用実施中。お気軽にご応募＆相談ください。')}}</td>
             </tr>
             <tr>
-                <td>{{_('2016年04月01日')}}</td>
+                <td class="td_style_03">{{_('2016年04月01日')}}</td>
                 <td>{{_('ホームページが公開されました。')}}</td>
             </tr>
             <tr>
-                <td>{{_('2016年03月20日')}}</td>
+                <td class="td_style_03">{{_('2016年03月20日')}}</td>
                 <td>{{_('BANANASOFT株式会社が成立しました。')}}</td>
             </tr>
         </table>
     </div>
     <div id="contact" class="contents_contact">
-        <table>
+        <table class="table_style_04">
             <tr>
-                <th colspan="2" align="left">{{_('お問い合わせ先')}}</th>
+                <th colspan="2" class="th_style_01">{{_('お問い合わせ先')}}</th>
             </tr>
             <tr>
-                <td>{{_('Email: info@bnn-soft.com')}}</td>
+                <td class="td_style_04">{{_('Email: info@bnn-soft.com')}}</td>
             </tr>
             <tr>
-                <td>{{_('Tel: 047-326-8544')}}</td>
+                <td class="td_style_04">{{_('Tel: 047-326-8544')}}</td>
             </tr>
             <tr>
-                <td>{{_('Fax: 047-326-8544')}}</td>
+                <td class="td_style_04">{{_('Fax: 047-326-8544')}}</td>
             </tr>
             <tr>
-                <td>{{_('Web: http://www.bnn-soft.com')}}</td>
+                <td class="td_style_04">{{_('Web: http://www.bnn-soft.com')}}</td>
             </tr>
             <tr>
-                <td>{{_('住所: 〒272-0034 千葉県市川市市川南3-10-12 ３階')}}</td>
+                <td class="td_style_04">{{_('住所: 〒272-0034 千葉県市川市市川南3-10-12 ３階')}}</td>
             </tr>
         </table>
     </div>
