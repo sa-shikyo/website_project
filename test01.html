@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>test</title>
+    <style type="text/css">
+        body {
+            background-color: #A5A5A5;
+            margin: 0px;
+        }
+
+        .container {
+            width: 1000px;
+            height: 800px;
+            margin: auto;
+            background-color: #FFFFFF;
+        }
+
+        .header {
+            width: 100%;
+            height: 80px;
+        }
+
+        .logo {
+            float: left;
+            width: 50%;
+            height: 80px;
+        }
+
+        .goto {
+            float: left;
+            width: 50%;
+            height: 80px;
+        }
+
+        ul {
+            list-style-type: none;
+            font-size: 0;
+            padding-left: 50px;
+            padding-top: 25px;
+        }
+
+        ul li {
+            display: inline;
+            font-size: 15px;
+            float: left;
+        }
+
+        ul li a {
+            display: block;
+            width: 80px;
+            height: 30px;
+            background-position: top left;
+            background-repeat: no-repeat;
+            /*text-indent: 100%;*/
+            white-space: nowrap;
+            overflow: hidden;
+            text-align: center;
+            color: #000000;
+        }
+
+        #top_goto_menu ul li:first-child {
+            background-color: #6A6AFF;
+        }
+
+        ul li a:link {
+            text-decoration: none;
+        }
+
+        ul li a:hover {
+            /*color: #FFF000;*/
+            background-color: #fff;
+            border-color: #59b1eb;
+            color: #59b1eb;
+        }
+
+        ul li button {
+            background-color: #6A6AFF;
+            width: 80px;
+            height: 20px;
+            border-top: 0px;
+            border-bottom: 0px;
+            border-left: 1px solid #FFF000;
+            border-right: 0px;
+        }
+
+        ul li:first-child button {
+            border-left: 0px;
+            background-color: red;
+            color: #FFF000;
+        }
+
+        ul li button:hover {
+            background-color: red;
+            /*border-color: #59b1eb;*/
+            color: #FFF000;
+        }
+
+/*        ul li button:active {
+            border: 2px solid #000000;
+        }*/
+
+
+
+        .contents {
+            width: 100%;
+            height: 620px;
+        }
+
+        .title {
+            width: 100%;
+            height: 200px;
+            background-color: #6A6AFF;
+        }
+
+        .content {
+            width: 100%;
+            height: 420px;
+        }
+
+        .div {
+            width: 223px;
+            height: 198px;
+            float: left;
+            margin-left: 20px;
+            margin-top: 20px;
+            border: 1px solid #A5A5A5;
+        }
+
+        .div_01 {
+            width: 25%;
+            height: 100%;
+            float: left;
+            /*background-color: #FFF000;*/
+            /*border-right: 1px solid #000000;*/
+            padding-top: 20px;
+
+        }
+
+        .div_02 {
+            width: 749px;
+            height: 419px;
+            float: left;
+            /*background-color: #000000;*/
+            margin-top: 20px;
+            border-left: 1px solid #FFF000;
+            border-top: 1px solid #FFF000;
+        }
+
+        #div_01 ul {
+            list-style-type: none;
+            width: 250px;
+            height: 100%;
+            font-size: 0;
+            padding-left: 0px;
+            padding-top: 0px;
+        }
+
+        #div_01 ul li {
+            display: block;
+            /*font-size: 15px;*/
+            /*float: left;*/
+        }
+
+        #div_01 ul li a {
+            display: block;
+            width: 249px;
+            height: 29px;
+            background-position: top left;
+            background-repeat: no-repeat;
+            /*text-indent: 100%;*/
+            white-space: nowrap;
+            overflow: hidden;
+            text-align: center;
+            color: #000000;
+            border-top: 1px solid #FFF000;
+            border-left: 1px solid #FFF000;
+/*            border-right: 1px solid #FFF000;*/
+        }
+
+        #div_01 ul li:nth-child(5) a {
+            height: 28px;
+            border-bottom: 1px solid #FFF000;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <div id="logo" class="logo">
+            <ul>
+                <li><button>aaaa</button></li>
+                <li><button>bbbb</button></li>
+                <li><button>cccc</button></li>
+                <li><button>ffff</button></li>
+                <li><button>dddd</button></li>
+            </ul>
+        </div>
+        <div id="goto" class="goto">
+            <ul>
+                <li><a href="">aaaa</a></li>
+                <li><a href="">bbbb</a></li>
+                <li><a href="">cccc</a></li>
+                <li><a href="">dddd</a></li>
+                <li><a href="">ffff</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="contents">
+        <div id="contents_title" class="title"></div>
+        <div id="contents" class="content">
+            <div id="div_01" class="div_01">
+                <ul>
+                    <li><a href="">aaaa</a></li>
+                    <li><a href="">bbbb</a></li>
+                    <li><a href="">cccc</a></li>
+                    <li><a href="">dddd</a></li>
+                    <li><a href="">ffff</a></li>
+                </ul>
+            </div>
+            <div class="div_02"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
